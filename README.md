@@ -14,7 +14,7 @@ devtools::install_local("path/to/PCAoutlierRemover")
 Or once on GitHub:
 
 ```r
-devtools::install_github("jhereward/PCAoutlierRemover")
+devtools::install_github("JamesHereward/PCAoutlierRemover")
 ```
 
 ## Usage

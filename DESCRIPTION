@@ -29,5 +29,5 @@ Imports:
 Suggests:
     vcfR,
     SNPfiltR
-URL: https://github.com/jhereward/PCAoutlierRemover
-BugReports: https://github.com/jhereward/PCAoutlierRemover/issues
+URL: https://github.com/JamesHereward/PCAoutlierRemover
+BugReports: https://github.com/JamesHereward/PCAoutlierRemover/issues
