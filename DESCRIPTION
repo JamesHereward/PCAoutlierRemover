@@ -1,0 +1,33 @@
+Package: PCAoutlierRemover
+Type: Package
+Title: Interactive Outlier Removal from PCA of Population Genomic Data
+Version: 0.1.0
+Authors@R: 
+    person("James", "Hereward",
+           email = "j.hereward@uq.edu.au",
+           role = c("aut", "cre"))
+Description: A Shiny gadget for identifying and removing outlier samples
+    from PCA plots of population genomic data. Designed for ddRAD/SNP
+    datasets filtered with SNPfiltR or similar workflows. Works directly
+    from a genind object or a scores data frame. Drag a rectangle to
+    brush-select samples, click to toggle individual points, switch
+    between PC axes on the fly, and return the selected sample IDs to
+    R for downstream filtering.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 8.0.0
+Depends:
+    R (>= 4.0)
+Imports:
+    ade4,
+    adegenet,
+    ggplot2,
+    shiny,
+    utils
+Suggests:
+    vcfR,
+    SNPfiltR
+URL: https://github.com/jhereward/PCAoutlierRemover
+BugReports: https://github.com/jhereward/PCAoutlierRemover/issues
