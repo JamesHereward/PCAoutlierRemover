@@ -121,12 +121,12 @@ remove_outliers <- function(x,
       df$selected <- df$id %in% selected()
       ps <- input$psize
 
-      ggplot2::ggplot(df, ggplot2::aes_string(x = input$pcx, y = input$pcy)) +
+      ggplot2::ggplot(df, ggplot2::aes(x = .data[[input$pcx]], y = .data[[input$pcy]])) +
         ggplot2::geom_point(ggplot2::aes(colour = .data$pop,
                                          alpha  = .data$selected),
                             size = ps) +
         ggplot2::geom_point(data = df[df$selected, ],
-                            ggplot2::aes_string(x = input$pcx, y = input$pcy),
+                            ggplot2::aes(x = .data[[input$pcx]], y = .data[[input$pcy]]),
                             colour = "#E24B4A",
                             size   = ps + 1.5,
                             shape  = 21,
